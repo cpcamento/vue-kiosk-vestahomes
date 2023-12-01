@@ -1,0 +1,255 @@
+@import "./base.css";
+g.gdown {
+  transform: translateY(18px);
+}
+.floorplan-wrapper {
+  display: flex;
+}
+.white {
+  color: #fff;
+}
+.text-center {
+  text-align: center;
+}
+svg rect.counter.available {
+  fill: #fff;
+  stroke: #fff;
+}
+svg rect.counter.sold {
+  fill: red;
+  stroke: red;
+}
+svg rect.counter.reserved {
+  fill: yellow;
+  stroke: yellow;
+}
+svg rect.counter.blocked {
+  fill: #955fc1;
+  stroke: #955fc1;
+}
+svg rect.counter.hayat {
+  fill: #c97747;
+  stroke: #c97747;
+}
+svg.floorplan {
+  user-select: none;
+  pointer-events: none;
+  background: #154252;
+  border-radius: 20px;
+}
+svg.floorplan rect,
+svg.floorplan path {
+  fill: #0000;
+  stroke: #ccc;
+  stroke-width: 1;
+}
+
+svg.floorplan rect.Available,
+svg.floorplan path.Available,
+svg.floorplan rect.unit,
+svg.floorplan path.unit {
+  fill: #fff;
+  stroke: #ccc;
+}
+svg.floorplan rect.Sold,
+svg.floorplan path.Sold {
+  stroke: #fff;
+  fill: red;
+}
+svg.floorplan rect.Reserved,
+svg.floorplan path.Reserved {
+  stroke: #fff;
+  fill: yellow;
+}
+svg.floorplan rect.Blocked,
+svg.floorplan path.Blocked {
+  stroke: #fff;
+  fill: #955fc1;
+}
+svg.floorplan text.counter {
+  fill: #fff;
+  font-size: 5px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+svg.floorplan text.counter.big {
+  font-size: 15px;
+}
+svg.floorplan text.counter.available,
+svg.floorplan text.counter.reserved {
+  fill: #000;
+}
+
+svg.floorplan text.Sold {
+  fill: #fff;
+}
+svg.floorplan text.Available,
+svg.floorplan text.Reserved {
+  fill: #000;
+}
+
+svg.floorplan rect.Hayat,
+svg.floorplan path.Hayat {
+  fill: #c97747;
+  stroke: #fff;
+}
+svg.floorplan text.Hayat {
+  fill: #fff;
+}
+
+.floorplan + text {
+  font-size: 7px;
+  font-family: math;
+  font-weight: 600;
+  fill: #0ea0ad;
+}
+.floorplan + text + text {
+  font-size: 6px;
+  font-family: math;
+  fill: #0ea0ad;
+}
+
+.floorlevel {
+  position: absolute;
+  right: 5%;
+  height: 60vh;
+  overflow: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.floorlevel::-webkit-scrollbar {
+  width: 5px;
+  background: lightgray;
+}
+
+.floorlevel::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #154252;
+  border-radius: 15px;
+}
+
+.floorlevel::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+.floorlevel a {
+  display: block;
+  text-decoration: none;
+  padding: 0.6rem 0.5rem;
+  background-color: #3c768b;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  user-select: none;
+  box-shadow: 0 0 2px 0 #000 inset;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.floorlevel a.router-link-active {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.floorlevel a:hover {
+  opacity: 0.5;
+}
+
+.f-transparent {
+  fill: #0000;
+}
+.fill-blured {
+  fill: #1b5367;
+}
+.fill-white {
+  fill: #fff !important;
+}
+.fill-reserved {
+  fill: yellow;
+  stroke: yellowgreen;
+}
+.fill-blocked {
+  fill: #673ab7;
+  stroke: #673ab7;
+}
+.fill-sold {
+  fill: red;
+  stroke: red;
+}
+.fill-hayat {
+  fill: #c97747;
+  stroke: #c97747;
+}
+svg.nivel-floorplan path.unit,
+svg.nivel-floorplan rect.unit {
+  stroke-width: 3;
+  fill: #0000;
+}
+svg.nivel-floorplan .unit {
+  stroke: #fff;
+  stroke-width: 3;
+}
+svg.nivel-floorplan path {
+  stroke: #fff;
+}
+svg.nivel-floorplan {
+  width: 100%;
+  background: #154252;
+}
+svg.nivel-floorplan > * {
+  user-select: none;
+}
+svg.nivel-floorplan text.label {
+  font-size: 14px;
+  font-family: math;
+  text-transform: uppercase;
+}
+svg.nivel-floorplan text {
+  fill: #fff;
+}
+
+svg.nivel-floorplan text.sub-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  font-family: math;
+}
+
+svg.nivel-floorplan g.legend text {
+  font-family: math;
+}
+svg.nivel-floorplan g.legend text.t {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+  fill: #000;
+}
+svg.nivel-floorplan path.unit.Available,
+svg.nivel-floorplan rect.unit.Available {
+  fill: #fff;
+  stroke: #e9e9e9 !important;
+}
+svg.nivel-floorplan path.unit.Reserved,
+svg.nivel-floorplan rect.unit.Reserved {
+  fill: yellow;
+}
+svg.nivel-floorplan path.unit.Blocked,
+svg.nivel-floorplan rect.unit.Blocked {
+  fill: #673ab7;
+}
+svg.nivel-floorplan path.unit.Sold,
+svg.nivel-floorplan rect.unit.Sold {
+  fill: red;
+}
+svg.nivel-floorplan path.unit.Hayat,
+svg.nivel-floorplan rect.unit.Hayat {
+  fill: #c97747;
+}
+svg.nivel-floorplan text.Available,
+svg.nivel-floorplan text.Reserved {
+  fill: #000;
+}
+svg.nivel-floorplan text.Blocked,
+svg.nivel-floorplan text.Sold {
+  fill: #fff;
+}
